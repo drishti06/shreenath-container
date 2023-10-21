@@ -1,0 +1,54 @@
+nav{
+    width: 95%;
+    display: flex;
+    margin: 2rem 0;
+    justify-content:space-between;
+}
+
+nav > :nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.logo{
+    width: 4.4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img{
+    width: 80%;
+    height: 80%;
+}
+
+.company-name{
+    display: flex;
+    flex-direction: column;
+}
+
+nav > :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btn{
+    background-color: #B10000;
+    display: flex;
+    gap: 3px;
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.contact-btn > button{
+    color: white;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

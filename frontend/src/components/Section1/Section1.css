@@ -1,0 +1,50 @@
+.section1{
+    margin-bottom: 7rem;
+
+}
+
+.section1-main{
+    background-color: #EAD5D5;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 95%;
+    height: 80vh;
+}
+
+.for-seo{
+    opacity: 0;
+}
+
+.contents{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargo-img{
+    height: 85vh;
+}
+
+.cargo-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.contents > :nth-child(2){
+    position: absolute;
+    font-size: 5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contents > :nth-child(2) > :nth-child(1){
+    font-size: 7rem;
+}
+
+.primary{
+    font-size: 8rem;
+    font-weight: 600;
+}

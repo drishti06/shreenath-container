@@ -1,10 +1,11 @@
 .commitments{
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
+    background-color: #F5F8F6;
+    z-index: -2;
+    padding: 2rem;
 }
 
 .commitments-top{
@@ -45,7 +46,7 @@
 
 .commitment > img{
     position: relative;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     height: 100%;
 }
@@ -56,26 +57,35 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
 }
 
 .commitment > div>  .bold{    
     color: white;
     font-weight: 600;
     font-size: 2rem;
+    z-index: 2;
 }
 
 .commitment > div> p{
     color: white;
     font-size: 1.4rem;
+    z-index: 2;
 }
 
-@media(max-width:576px){
+@media(max-width:480px){
+    .commitments{
+        padding: 2rem 0;
+    }
+}
+
+@media(max-width:600px){
     .commitments{
         height: max-content;
     }
 
     .commitments-top>:nth-child(1){
-        font-size:1.8rem;
+        font-size:2.5rem;
     }
 
     .commitments-top>:nth-child(2){
@@ -91,31 +101,27 @@
         gap: 1rem;
     }
 
-    .commitment > div>  .bold{    
-        font-size:2rem;
+    .commitment > img, .commitment > div{
+        width: 80%;
+    }
+
+    .commitment > div>  .bold{
+        font-size:3rem;
     }
 
     .commitment > div> p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
 @media(min-width:820px) and (min-height:1180px){
-     .commitments{
+    .commitments{
         height: max-content;
     }
-
-
-    .commitments-bottom{
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .commitment > img{
-        width: 60%;
+        width: 80%;
     }
-
     .commitment > div{
-        width: 60%;
+        width: 80%;
     }
 }

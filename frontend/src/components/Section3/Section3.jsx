@@ -1,7 +1,39 @@
 import './Section3.css'
 import hii from "../../images/waving-hand.png"
-import map from "../../images/map.png"
+import { useState } from 'react';
+import axios from "axios"
 function Section3() {
+    const [mailRes, setMailRes] = useState('')
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios
+            .post('http://localhost:8080/sendEmail', formData)
+            .then((response) => {
+                const data = response.data;
+                setMailRes(data);
+                setTimeout(() => {
+                    setMailRes("");
+                }, 5000);
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+            });
+    };
+
     return (
         <div className="container" id='section3'>
             <div className='section3'>
@@ -10,13 +42,14 @@ function Section3() {
                         <span>Get in touch <img src={hii} alt="" /></span>
                         <span>We'll do our best to respond within 1-2 working days.</span>
                     </div>
-                    <div className="form">
+                    <div className="form" onSubmit={handleSubmit}>
                         <form noValidate>
-                            <input type="text" placeholder='your name (eg. John Doe)' name="name" id="" />
-                            <input type="email" placeholder='your email (eg. xyz@example.com)' name="email" id="" />
-                            <input type="text" placeholder='phone number (eg. +91 (1234) 567-890)' name="phone" id="" />
-                            <textarea name="message" cols="30" rows="14" placeholder='your message'></textarea>
+                            <input type="text" placeholder='your name (eg. John Doe)' name="name" value={formData.name} onChange={handleChange} />
+                            <input type="email" placeholder='your email (eg. xyz@example.com)' name="email" value={formData.email} onChange={handleChange} />
+                            <input type="text" placeholder='phone number (eg. +91 (1234) 567-890)' name="phone" value={formData.phone} onChange={handleChange} />
+                            <textarea name="message" cols="30" rows="14" placeholder='your message' value={formData.message} onChange={handleChange}></textarea>
                             <button>Send Message</button>
+                            <p style={{ color: 'red' }}>{mailRes.msg}</p>
                         </form>
                     </div>
                 </div>

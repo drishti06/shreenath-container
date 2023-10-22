@@ -3,7 +3,7 @@ import "./Section1.css"
 import cargo from "../../images/cargo.png"
 function Section1() {
     return (
-        <div className="container section1">
+        <div className="section1">
             <Navbar />
             <div style={{ height: '7rem' }}></div>
             <div className="section1-main">
@@ -14,7 +14,7 @@ function Section1() {
                             <img src={cargo} alt="" />
                         </div>
                         <div>
-                            <span>Your Trusted</span>
+                            <span className="bg-text">Your Trusted</span>
                             <div style={{ display: 'flex', flexDirection: 'column', color: 'white' }}>
                                 <span className="primary">Partner in</span>
                                 <span className="secondary">Transport Industry.</span>

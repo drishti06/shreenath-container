@@ -2,7 +2,7 @@ import "./Section2.css"
 import truck from "../../images/truck.png"
 function Section2() {
     return (
-        <div className="container section2">
+        <div className="section2">
             <div className="section2-main">
                 <div className="section2-left">
                     <div className="headings">

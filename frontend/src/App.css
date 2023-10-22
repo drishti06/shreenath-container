@@ -8,14 +8,38 @@ html {
   scroll-behavior: smooth;
 }
 
-
 ::-webkit-scrollbar{
   display: none;
 }
 
-@media (max-width:576px) {
+@media(max-width:900px){
   html{
-        font-size: 80%;
-    }
-  
+    font-size: 90%;
+  }
+}
+
+@media(max-width:900px){
+  html{
+    font-size: 80%;
+  }
+}
+
+@media(max-width:600px){
+  html{
+    font-size: 70%;
+  }
+}
+
+
+@media(max-width:480px){
+  html{
+    font-size: 60%;
+  }
+}
+
+
+@media(max-width:320px){
+  html{
+    font-size: 50%;
+  }
 }

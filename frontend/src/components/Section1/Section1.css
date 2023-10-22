@@ -1,5 +1,8 @@
 .section1{
-    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
 .section1-main{
@@ -7,13 +10,14 @@
     border-radius: 2rem;
     padding: 1rem;
     width: 95%;
-    height: 80vh;
+    height: 75vh;
+    z-index: 1;
 }
 
 .for-seo{
     position: absolute;
-    opacity: 0.1;
-    font-size: 7.8rem;
+    opacity: 0;
+    font-size: 1rem;
     background: linear-gradient(253deg, rgba(227, 205, 205, 0.16) 38.76%, rgba(255, 0, 61, 0.20) 74.27%, rgba(227, 205, 205, 0.20) 102.9%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -28,14 +32,11 @@
     align-items: center;
 }
 
-.cargo-img{
-    height: 85vh;
-}
-
 .cargo-img > img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 10;
 }
 
 .contents > :nth-child(2){
@@ -45,7 +46,8 @@
     flex-direction: column;
 }
 
-.contents > :nth-child(2) > :nth-child(1){
+.bg-text{
+    z-index: -1;
     font-size: 7rem;
 }
 
@@ -57,70 +59,9 @@
 .secondary{
     font-size: 5rem;
 }
-@media(max-width:493px){
-    .contents>:nth-child(2){
-        position: relative;
-    }
-      .contents > :nth-child(2) > :nth-child(1) {
-        font-size: 4rem;
+
+@media(max-width:900px){
+    .bg-text, .primary, .secondary{
         text-align: center;
-    }
-
-    .primary{
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    .secondary{
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-
-@media(max-width:576px){
-    .section1{
-        margin-bottom: 0;
-        height: max-content;
-    }
-
-    .section1-main{
-    border-radius: 0rem;
-    padding: 0rem;
-    width: 100%;
-    height: 100%;
-    }
-
-    .contents{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cargo-img{
-        height:70%;
-    }
-
-    .contents > :nth-child(2){
-        width: 90%;
-    }
-
-    .contents > :nth-child(2) > :nth-child(1) {
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    .primary{
-        font-size: 5rem;
-        text-align: center;
-    }
-
-    .secondary{
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .for-seo{
-        font-size: 2rem;
-        text-align: center;
-        opacity: 0;
     }
 }

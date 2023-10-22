@@ -57,20 +57,25 @@
 .social-medias{
     display: flex;
     gap: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 .social-medias > svg{
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-bottom{
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@media(max-width:576px){
+@media(max-width:600px){
     .footer{
         padding:.5rem 0;
     }
@@ -97,7 +102,6 @@
         font-size: 1.2rem;
     }
 }
-
 
 @media(min-width:820px) and (min-height:1180px){
     .footer{

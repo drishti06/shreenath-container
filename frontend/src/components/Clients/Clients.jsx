@@ -1,8 +1,16 @@
+import { BsArrowRight } from "react-icons/bs"
 import "./Clients.css"
 
 function Clients() {
     return (
         <div className="clients-section">
+            <div className="partners">
+                <div>
+                    <span>our partnerships</span>
+                    <BsArrowRight style={{ fontSize: '2rem' }} />
+                </div>
+                <span className="span">We've earned our reputation for reliability and professionalism, leading to successful partnerships with several well-known paper mills.</span>
+            </div>
             <span>Our Marquee <strong className="clientele">Clintele</strong></span>
             <div className="clients-logo">
                 <svg width="314" height="157" viewBox="0 0 314 157" fill="none" xmlns="http://www.w3.org/2000/svg">

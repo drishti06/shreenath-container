@@ -1,6 +1,5 @@
 .section1{
     margin-bottom: 7rem;
-
 }
 
 .section1-main{
@@ -12,7 +11,13 @@
 }
 
 .for-seo{
-    opacity: 0;
+    position: absolute;
+    opacity: 0.1;
+    font-size: 7.8rem;
+    background: linear-gradient(253deg, rgba(227, 205, 205, 0.16) 38.76%, rgba(255, 0, 61, 0.20) 74.27%, rgba(227, 205, 205, 0.20) 102.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contents{
@@ -30,11 +35,11 @@
 .cargo-img > img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .contents > :nth-child(2){
     position: absolute;
-    font-size: 5rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -47,4 +52,75 @@
 .primary{
     font-size: 8rem;
     font-weight: 600;
+}
+
+.secondary{
+    font-size: 5rem;
+}
+@media(max-width:493px){
+    .contents>:nth-child(2){
+        position: relative;
+    }
+      .contents > :nth-child(2) > :nth-child(1) {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .primary{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .secondary{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:576px){
+    .section1{
+        margin-bottom: 0;
+        height: max-content;
+    }
+
+    .section1-main{
+    border-radius: 0rem;
+    padding: 0rem;
+    width: 100%;
+    height: 100%;
+    }
+
+    .contents{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cargo-img{
+        height:70%;
+    }
+
+    .contents > :nth-child(2){
+        width: 90%;
+    }
+
+    .contents > :nth-child(2) > :nth-child(1) {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .primary{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .secondary{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .for-seo{
+        font-size: 2rem;
+        text-align: center;
+        opacity: 0;
+    }
 }

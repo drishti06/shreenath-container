@@ -1,11 +1,11 @@
 .footer{
     display: flex;
-    padding: 1rem 0;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #FFEBEE;
-    padding-bottom: 5rem;
+    padding: 1rem 0;
+    gap: 1rem;
 }
 
 .footer-top{
@@ -31,17 +31,6 @@
     font-size: 1.2rem;
 }
 
-.social-medias{
-    padding: 10px;
-    background-color: #EBB1B1;
-    width: 30%;
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3rem;
-}
-
 .top-right{
     display: flex;
     flex-direction: column;
@@ -54,9 +43,91 @@
     gap: 3px;
 }
 
+.footer-middle{
+    padding: 0.8rem;
+    width: 14rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6rem;
+    background-color: #EBB1B1;
+}
+
+.social-medias{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-medias > svg{
+    cursor: pointer;
+}
+
 .footer-bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width:576px){
+    .footer{
+        padding:.5rem 0;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .top-left > :nth-child(1){
+        justify-content: flex-start;
+    }
+
+    .top-right{
+        align-items: center;
+    }
+
+    .top-right > div > span{
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom > span{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media(min-width:820px) and (min-height:1180px){
+    .footer{
+        padding:.5rem 0;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .top-left > :nth-child(1){
+        justify-content: flex-start;
+    }
+
+    .top-left > :nth-child(1) > :nth-child(2){
+        font-size: 1.4rem;
+        font-weight: 600;    
+}
+
+    .top-right{
+        align-items: center;
+    }
+
+    .top-right > div > span{
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom > span{
+        font-size: 1.2rem;
+    }
 }

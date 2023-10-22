@@ -5,8 +5,9 @@ function Section1() {
     return (
         <div className="container section1">
             <Navbar />
-            <span className="for-seo">Shreenath containers movement pvt ltd</span>
+            <div style={{ height: '7rem' }}></div>
             <div className="section1-main">
+                <h1 className="for-seo">Shreenath <br />containers <br /> movement <br /> pvt ltd</h1>
                 <div className="main">
                     <div className="contents">
                         <div className="cargo-img">

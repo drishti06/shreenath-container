@@ -1,3 +1,5 @@
+import Clients from "../../components/Clients/Clients"
+import Commitments from "../../components/Commitments/Commitments"
 import Footer from "../../components/Footer/Footer"
 import Section1 from "../../components/Section1/Section1"
 import Section2 from "../../components/Section2/Section2"
@@ -9,6 +11,9 @@ function HomePage() {
         <>
             <Section1 />
             <Section2 />
+            <Commitments />
+            <Section2 />
+            <Clients />
             <Section3 />
             <Footer />
         </>

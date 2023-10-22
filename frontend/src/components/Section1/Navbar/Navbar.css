@@ -1,9 +1,26 @@
 nav{
-    width: 95%;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     display: flex;
-    margin: 2rem 0;
+    padding: 0.8rem;
     justify-content:space-between;
+    background: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);  
+    border-bottom: 1px solid #D4D4D4;
 }
+
+nav.hide {
+  top: -100px; /* Adjust this value as needed */
+  transition: top 0.5s;
+}
+
+nav.show {
+  top: 0;
+  transition: top 0.5s;
+}
+
 
 nav > :nth-child(1){
     display: flex;
@@ -45,10 +62,3 @@ nav > :nth-child(2){
     cursor: pointer;
 }
 
-.contact-btn > button{
-    color: white;
-    font-weight: 600;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}

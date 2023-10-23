@@ -39,7 +39,7 @@ function Section3() {
             <div className='section3'>
                 <div className="section3-left">
                     <div>
-                        <span>Get in touch <img src={hii} alt="" /></span>
+                        <span>Get in touch <img src={hii} width='50' /></span>
                         <span>We'll do our best to respond within 1-2 working days.</span>
                     </div>
                     <div className="form" onSubmit={handleSubmit}>
@@ -47,10 +47,11 @@ function Section3() {
                             <input type="text" placeholder='your name (eg. John Doe)' name="name" value={formData.name} onChange={handleChange} />
                             <input type="email" placeholder='your email (eg. xyz@example.com)' name="email" value={formData.email} onChange={handleChange} />
                             <input type="text" placeholder='phone number (eg. +91 (1234) 567-890)' name="phone" value={formData.phone} onChange={handleChange} />
-                            <textarea name="message" cols="30" rows="14" placeholder='your message' value={formData.message} onChange={handleChange}></textarea>
+                            <textarea name="message" cols="30" rows="15" placeholder='your message' value={formData.message} onChange={handleChange}></textarea>
+
                             <button>Send Message</button>
-                            <p style={{ color: 'red' }}>{mailRes.msg}</p>
                         </form>
+                        <p style={{ color: 'red' }}>{mailRes.msg}</p>
                     </div>
                 </div>
                 <div className="section3-right">

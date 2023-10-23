@@ -3,16 +3,16 @@ nav{
     z-index: 100;
     width: 100%;
     display: flex;
-    padding: 0.8rem;
+    padding:0.5rem 2rem;
     justify-content:space-between;
     background: white;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);  
+    opacity: 0.95;
     border-bottom: 1px solid #D4D4D4;
 }
 
+
 nav.hide {
-  top: -100px; /* Adjust this value as needed */
+  top: -100px;
   transition: top 0.5s;
 }
 
@@ -20,6 +20,7 @@ nav.show {
   top: 0;
   transition: top 0.5s;
 }
+
 
 
 nav > :nth-child(1){
@@ -38,13 +39,22 @@ nav > :nth-child(1){
 }
 
 .logo > img{
-    width: 80%;
+    width: 90%;
     height: 80%;
 }
 
 .company-name{
     display: flex;
     flex-direction: column;
+}
+
+.company-name > :nth-child(1){
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.company-name > :nth-child(2){
+    font-size: 1rem;
 }
 
 nav > :nth-child(2){
@@ -55,10 +65,27 @@ nav > :nth-child(2){
 
 .contact-btn{
     background-color: #B10000;
-    display: flex;
-    gap: 3px;
-    padding: 0.8rem 1rem;
+    display: inline-flex;
+    gap: 0.8rem;
+    padding: 1rem 1.2rem;
+    align-items: center;
     border-radius: 2rem;
     cursor: pointer;
 }
 
+@media(max-width:536px){
+   
+    .company-name{
+        display: none;
+    }
+}
+
+@media(min-width:537px) and (max-width:576px) {
+     .company-name >:nth-child(1){
+        font-size: 1.2rem;
+    }
+
+    .company-name > :nth-child(2){
+        font-size: 0.8rem;
+    }
+}

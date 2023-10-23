@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #FFF3E1;
+    padding: 0 2rem ;
 }
 
 .section2-left{
@@ -92,7 +93,7 @@
     }
     .para{
         width: 100%;
-        text-align: start;
+        text-align: justify;
     }
     .svgs > div{
         z-index: 12;
@@ -102,19 +103,19 @@
     }
     .svgs > div > span{
         text-align: start;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         width: 100%;
     }
     .section2-right{
-        position: absolute;
-        width: 50%;
-        height: 35%;
-        z-index: 1;
+        width: 100%;
+        height: 100%;
     }
-
     .section2-right > img{
-       display: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: none;
     }
 
 }
@@ -167,7 +168,7 @@
         width: 100%;
     }
     .section2-right > img{
-        width: 50%;
+        display: none;
     }
 }
 
@@ -190,5 +191,9 @@
     .section2-right{
         display: flex;
         justify-content: center;
+    }
+
+    .section2-right{
+        display: none;
     }
 }

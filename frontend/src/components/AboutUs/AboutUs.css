@@ -12,12 +12,13 @@
 }
 
 .about-us > span{
-    font-size: 3.5rem;
+    border: 4rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
 .about-us> p{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: justify;
 }
 
@@ -27,7 +28,7 @@
 
 .about-us-left > p{
     width: 85%;
-    font-size:1.6rem ;
+    font-size:1.6rem;
     text-align: justify;
 }
 
@@ -53,6 +54,7 @@
 
     .about-us-left>p{
         width: 100%;
+        font-size: 1.6rem;
     }
 
     .about-us-right{
@@ -66,5 +68,31 @@
     .trophy{
         width: 40%;
         right: 0rem;
+    }
+}
+
+@media(width:1024px) and (height:600px){
+    .awards{
+        flex-direction: row;
+    }
+    
+
+    .about-us > p, .about-us-left > p{
+        font-size: 1.2rem;
+    }
+
+    .about-us-right{
+        display: flex;
+        align-items: center;
+    }
+
+    .certif{
+        width: 100%;
+    }
+
+    
+    .trophy{
+        width: 8%;
+        right: 10rem;
     }
 }

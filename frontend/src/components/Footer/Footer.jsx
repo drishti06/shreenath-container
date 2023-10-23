@@ -9,7 +9,7 @@ function Footer() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="37" viewBox="0 0 32 37" fill="none">
                             <path fillRule="evenodd" clipRule="evenodd" d="M16.165 0C22.8835 0 28.33 5.44646 28.33 12.165C28.33 14.3811 27.7391 16.4575 26.7021 18.2482C26.0108 19.442 22.4984 25.5243 16.165 36.495C9.83158 25.5243 6.3192 19.442 5.62787 18.2482C4.59087 16.4575 4 14.3811 4 12.165C4 5.44646 9.44646 0 16.165 0ZM16.165 6.95143C13.2856 6.95143 10.9514 9.28562 10.9514 12.165C10.9514 15.0444 13.2856 17.3786 16.165 17.3786C19.0444 17.3786 21.3786 15.0444 21.3786 12.165C21.3786 9.28562 19.0444 6.95143 16.165 6.95143Z" fill="black" />
                         </svg>
-                        <span>Satra Plaza Unit.No.1113, Sector 19D, Palm Beach Road, <br />
+                        <span>Satra Plaza Unit.No.1113, Sector 19D, Palm Beach Road,
                             Vashi, Navi Mumbai - 400703</span>
                     </div>
 

@@ -37,18 +37,19 @@ function Navbar() {
                 </div>
             </div>
             <div>
-                <div className="contact-btn">
-                    <Link
-                        to="section3"
-                        spy={true}
-                        smooth={true}
-                        duration={2000}
-                        style={{ cursor: 'pointer', color: 'white' }}
-                    >
-                        CONTACT US
-                    </Link>
-                    <HiOutlineArrowNarrowRight style={{ color: 'white', fontSize: '1rem' }} />
-                </div>
+
+                <Link
+                    className="contact-btn"
+                    to="section3"
+                    spy={true}
+                    smooth={true}
+                    duration={2000}
+                    style={{ cursor: 'pointer', color: 'white', }}
+                >
+                    CONTACT US
+                    <HiOutlineArrowNarrowRight style={{ color: 'white', fontSize: '1.3rem' }} />
+                </Link>
+
             </div>
         </nav>
     )

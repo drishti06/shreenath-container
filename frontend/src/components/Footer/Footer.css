@@ -28,7 +28,7 @@
 }
 
 .top-left > :nth-child(1) > span{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .top-right{
@@ -88,6 +88,11 @@
 
     .top-left > :nth-child(1){
         justify-content: flex-start;
+    }
+
+    .top-left >:nth-child(1) > span{
+        width: 100%;
+        font-size: 1.4rem;
     }
 
     .top-right{

@@ -23,12 +23,17 @@
 }
 
 .ceo > p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: justify;
 }
 
-@media(max-width:480px){
+
+@media(width:1024px) and (height:600px){
+    .ceo > span{
+        font: 3rem;
+    }
+
     .ceo > p{
-        font-size: 1.5rem;
-        }
+        font-size: 1.2rem;
+    }
 }

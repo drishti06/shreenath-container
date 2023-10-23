@@ -85,7 +85,7 @@
     }
 
     .commitments-top>:nth-child(1){
-        font-size:2.5rem;
+        font-size:2.3rem;
     }
 
     .commitments-top>:nth-child(2){
@@ -93,7 +93,8 @@
     }
 
     .commitments-top >p{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        text-align: justify;
     }
 
     .commitments-bottom{
@@ -102,7 +103,7 @@
     }
 
     .commitment > img, .commitment > div{
-        width: 80%;
+        width: 100%;
     }
 
     .commitment > div>  .bold{
@@ -123,5 +124,27 @@
     }
     .commitment > div{
         width: 80%;
+    }
+}
+
+
+@media(width:1024px) and (height:600px){
+      .commitments-top>:nth-child(1){
+        font-size:2.3rem;
+    }
+
+    .commitments-top>:nth-child(2){
+        font-size: 2.5rem;
+    }
+      .commitments-top >p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .commitment > div>  .bold{
+        font-size:2.5rem;
+    }
+
+    .commitment > div> p{
+        font-size: 1rem;
     }
 }

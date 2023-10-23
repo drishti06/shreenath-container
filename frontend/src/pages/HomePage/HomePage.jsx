@@ -19,7 +19,6 @@ function HomePage() {
             <AboutCEO />
             <WhyUs />
             <Clients />
-            <Section2 />
             <Section3 />
             <Footer />
         </>

@@ -41,3 +41,20 @@
     font-size: 1.7rem;
     text-align: justify;
 }
+
+.caret{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+@media(width:1024px) and (height:600px){
+    .whyus-main > div > span > u{
+        font-size: 1.6rem;
+    }
+
+    .whyus-main > div > p{
+        font-size: 1.2rem;
+    }
+}

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -7,17 +8,18 @@ const Mailgen = require('mailgen');
 const server = express();
 
 server.use(cors());
-server.use(bodyParser.json());
 server.use(express.json());
+server.use(bodyParser.json());
+server.use(express.static(process.env.PUBLIC_DIR))
 
 server.post('/sendEmail', async (req, res) => {
     const email = req.body.email
     let config = {
-        service: 'gmail',
-        port: 587,
+        host: process.env.HOST,
+        port: process.env.GMAIL_PORT,
         auth: {
-            user: 'kurmavanshi81@gmail.com',
-            pass: 'ijij mtya hcfc qczn'
+            user: process.env.GMAIL_ID,
+            pass: process.env.GMAIL_PASSWORD
         }
     };
 
@@ -41,9 +43,9 @@ server.post('/sendEmail', async (req, res) => {
     let mail = MailGenerator.generate(response)
 
     let message = {
-        from: "Drishti <kurmavanshi81@gmail.com>",
+        from: process.env.EMAIL_ID,
         to: email,
-        subject: "Mail from ShreenathTransporter",
+        subject: "Hello ✔",
         html: mail
     }
 
@@ -54,6 +56,6 @@ server.post('/sendEmail', async (req, res) => {
     })
 })
 
-server.listen(8080, () => {
-    console.log("server started at port 8080");
+server.listen(process.env.SERVER_PORT, () => {
+    console.log(`Server started at port ${process.env.SERVER_PORT}`);
 });

@@ -44,10 +44,10 @@ function Navbar() {
                     spy={true}
                     smooth={true}
                     duration={2000}
-                    style={{ cursor: 'pointer', color: 'white', }}
+                    style={{ cursor: 'pointer', color: 'white', fontSize: 'clamp(0.6rem,3vw,1.2rem)' }}
                 >
                     CONTACT US
-                    <HiOutlineArrowNarrowRight style={{ color: 'white', fontSize: '1.3rem' }} />
+                    <HiOutlineArrowNarrowRight style={{ color: 'white', fontSize: 'clamp(0.5rem, 7vw,1.3rem)' }} />
                 </Link>
 
             </div>

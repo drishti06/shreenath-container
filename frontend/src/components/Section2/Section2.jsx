@@ -13,10 +13,11 @@ function Section2() {
                         <p>With over two decades of experience in paper industry, we are strategically located to provide efficient and reliable transportation service. Our fleet of 50 trailers ensures timely delivery and customer satisfaction.</p>
                     </div>
                     <div className="svgs">
-                        <div><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M36.165 18C42.8835 18 48.33 23.4465 48.33 30.165C48.33 32.3811 47.7391 34.4575 46.7021 36.2482C46.0108 37.442 42.4984 43.5243 36.165 54.495C29.8316 43.5243 26.3192 37.442 25.6279 36.2482C24.5909 34.4575 24 32.3811 24 30.165C24 23.4465 29.4465 18 36.165 18ZM36.165 24.9514C33.2856 24.9514 30.9514 27.2856 30.9514 30.165C30.9514 33.0444 33.2856 35.3786 36.165 35.3786C39.0444 35.3786 41.3786 33.0444 41.3786 30.165C41.3786 27.2856 39.0444 24.9514 36.165 24.9514Z" fill="#521212" />
-                            <circle cx="36" cy="36" r="34" stroke="#521212" strokeWidth="4" />
-                        </svg>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M36.165 18C42.8835 18 48.33 23.4465 48.33 30.165C48.33 32.3811 47.7391 34.4575 46.7021 36.2482C46.0108 37.442 42.4984 43.5243 36.165 54.495C29.8316 43.5243 26.3192 37.442 25.6279 36.2482C24.5909 34.4575 24 32.3811 24 30.165C24 23.4465 29.4465 18 36.165 18ZM36.165 24.9514C33.2856 24.9514 30.9514 27.2856 30.9514 30.165C30.9514 33.0444 33.2856 35.3786 36.165 35.3786C39.0444 35.3786 41.3786 33.0444 41.3786 30.165C41.3786 27.2856 39.0444 24.9514 36.165 24.9514Z" fill="#521212" />
+                                <circle cx="36" cy="36" r="34" stroke="#521212" strokeWidth="4" />
+                            </svg>
                             <span>Strategic Locations</span>
                         </div>
                         <div>

@@ -13,27 +13,15 @@
 }
 
 .ceo >span{
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw,4rem);
     font-weight: 800;
 }
 
 .ceo > p > strong{
     font-weight: 700;
-    font-size: larger;
 }
 
 .ceo > p{
-    font-size: 1.6rem;
+    font-size: clamp(0.8rem, 2.5vw, 1.6rem);
     text-align: justify;
-}
-
-
-@media(width:1024px) and (height:600px){
-    .ceo > span{
-        font: 3rem;
-    }
-
-    .ceo > p{
-        font-size: 1.2rem;
-    }
 }

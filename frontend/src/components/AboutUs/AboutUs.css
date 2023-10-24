@@ -1,98 +1,98 @@
 .aboutUs{
     display: flex;
     justify-content: center;
-    padding: 3rem 0;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 .about-us{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: clamp(1rem,1vh,2rem);
     width: 90%;
 }
 
 .about-us > span{
-    border: 4rem;
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 4vw, 4rem);
     font-weight: 800;
 }
 
 .about-us> p{
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     text-align: justify;
+    padding-bottom: 1rem;
 }
 
 .awards{
     display: flex;
 }
 
+.about-us-left{
+    display: flex;
+    gap: clamp(.2rem,1vh,1rem);
+    flex-direction: column;
+}
+
+.about-us-right{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .about-us-left > p{
-    width: 85%;
-    font-size:1.6rem;
+    width: 90%;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     text-align: justify;
 }
 
 .certif{
     position: relative;
+    height: 495px;
+    height:  495px;
+    width:355px;
+    flex-shrink: 0;
 }
 
 .trophy{
     position: absolute;
     z-index: 10;
+    max-width: 180px;
+    max-height: 500px;
     margin-left: -5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
-
-@media(max-width:1200px){
-    .aboutUs{
-       padding: 1rem 0;
-    }
-    .awards{
-        gap: 2.5rem;
-        flex-direction: column-reverse;
-    }
-
-    .about-us-left>p{
-        width: 100%;
-        font-size: 1.6rem;
-    }
-
-    .about-us-right{
-        width: 100%;
-    }
-
-    .certif{
-        width: 80%;
-    }
-
-    .trophy{
-        width: 40%;
-        right: 0rem;
-    }
-}
-
-@media(width:1024px) and (height:600px){
-    .awards{
-        flex-direction: row;
-    }
+@media(max-width:700px){
     
-
-    .about-us > p, .about-us-left > p{
-        font-size: 1.2rem;
+    .awards{
+      flex-direction: column-reverse;
     }
-
+    .about-us-left > p{
+        width: 100%;
+    }
     .about-us-right{
-        display: flex;
+        padding-bottom: 2rem;
         align-items: center;
+        justify-content: center;
     }
-
     .certif{
-        width: 100%;
+        width: 245px;
+        height: 342px;
     }
-
-    
     .trophy{
-        width: 8%;
-        right: 10rem;
+        left: 30%;
+        width: 157px;
+        height: 344px;
     }
 }
+
+ @media(min-width:700px) and (max-width:744px){
+    .certif{
+        width: 245px;
+        height: 342px;
+    }
+    .trophy{
+        width: 157px;
+        height: 344px;
+        flex-shrink: 0;
+        right: 0;
+    }
+ }

@@ -1,13 +1,12 @@
 .section3{
     display: flex;
     width: 100%;
-    height: max-content;
     justify-content: center;
-    align-items: center;
+    padding: 3rem 0;
 }
 
+
 .section3-left{
-    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,38 +14,38 @@
     background-color: #333333;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    padding-bottom: 2rem;
 }
 
 .section3-left > :nth-child(1){
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .section3-left > :nth-child(1) > :nth-child(1){
-    font-size: 3.5rem;
+    font-size:clamp(1.5rem, 4vw ,3.5rem);
     font-weight: 700;
     color: white;
 }
 
 .section3-left > :nth-child(1) > :nth-child(2){
-    font-size : 1.5rem;
+    font-size : clamp(0.5rem, 2.5vw, 1.5rem);
     color: white;
 }
 
 .form{
-    width: 80%;
-    height: 70%;
+    width: 70%;
     display: flex;
     border-radius: 1rem;
     justify-content: center;
-    padding: 1rem 0;
     background-color: white;
+    padding: 2rem 0;
 }
 
 .form > form {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -61,27 +60,26 @@
 
 .form > form > input::placeholder, textarea::placeholder{
     color: #DBDBDB;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 3vw,1rem);
     font-weight: 600;
 }
 
 
 .form > form > button{
     cursor: pointer;
-    width: 100%;
     background-color: #B10000;
     border: none;
     color: white;
     border-radius: 0.7rem;
     padding: 0.8rem ;
-    font-size:1.2rem ;
+    font-size:clamp(0.7rem,2vw,1.2rem );
 }
 
 .section3-right{
   border: 2px solid #DBDBDB;
+  display: flex;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  height: 90%;
 }
 
 .section3-right > iframe{
@@ -90,144 +88,42 @@
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+@media(max-width:557px){
+    .form > form >textarea{
+        max-height: 10vh;
+    }
+}
 
-@media(max-width:620px){
-    .section3{
-        flex-direction: column-reverse;
+@media(max-width:1000px){
+    .section3{ 
+        padding: 0;
+        flex-direction: column;
     }
     .section3-left{
-        height: 60%;
-        width: 90%;
         border-radius: 0;
     }
-
-    .section3-left > :nth-child(1) > :nth-child(1){
-        font-size: 3rem;
-    }
-
-    .section3-left > :nth-child(1) > :nth-child(2){
-        font-size: 1.2rem;
-    }
-
     .section3-right {
-        height: 30%;
-        width: 90%;
         border-radius: 0;
     }
 
     .section3-right> :nth-child(1){
-        height: 100%;
-        width: 100%;
         border-radius: 0;
     }
-}
-
-@media(min-width:621px) and (max-width:800px){
-    .section3{
-        padding: 2rem 0;
-        width: 100%;
-        height: max-content;
-    }
-    
-    .section3-left{
-        width: 50%;
-    }
-
     .section3-right{
-        width: 50%;
-    }
-
-    .section3-right>:nth-child(1){
-        width: 100%;
-    }
-}
-
-@media (min-width:801px) and (max-width:1100px){
-    .section3{
-        height: 95%;
-        padding:0 1rem;
-    }
-
-    .section3-left{
-        width: 100%;
-        border-radius: 0;
-        gap: 0;
-    }
-
-    .section3-left > :nth-child(1) > :nth-child(1){
-        font-size:3rem;
-        text-align: center;
-    }
-
-    .section3-left > :nth-child(1) > :nth-child(2){
-        text-align: center; 
-        font-size: 1.2rem;   
-    }
-
-    .form  {
-        height:70%;
-    }
-
-    .section3-right{
-        width: 100%;
-        border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid transparent;
+        height: 50vh;
     }
     .section3-right > iframe{
-        width:100%;
-        height: 100%;
-        border-radius: 0;
+        width: 100%;
     }
 }
 
-
-/* For Ipad Air */
-@media(width:820px) and (height:1180px){
-     .section3{
-        flex-direction: column-reverse;
-        padding: 0;
-        height: 100%;
-        }
-
-    .section3-left{
-        height: 70%;
-        width: 100%;
-        border-radius: 0;
-        justify-content: space-around;
-    }
-
-    .section3-left > :nth-child(1) > :nth-child(1){
-        font-size: 3.5rem;
-        text-align: center;
-    }
-
-    .section3-left > :nth-child(1) > :nth-child(2){
-        text-align: center;    
-    }
-
-    .form{
-        height:70%;
-        }
-
-    .form > form{
-        justify-content: space-between;
+@media(min-width:1000px) and (max-width:1245px){
+    .section3{
+        padding-left: 1rem ;
+        padding-right: 1rem ;
     }
 
     .section3-right{
-        width: 100%;
-        height: 30%;
-        border-radius: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section3-right > iframe{
-        width:90%;
-        height: 90%;
+        width: 50%;
     }
 }

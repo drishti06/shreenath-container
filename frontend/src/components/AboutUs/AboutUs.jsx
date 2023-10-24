@@ -17,6 +17,7 @@ function AboutUs() {
                     <div className="about-us-right">
                         <img src={MsmeTrophy} className="trophy" />
                         <img src={MsmeCertificate} className="certif" />
+
                     </div>
                 </div>
             </div>

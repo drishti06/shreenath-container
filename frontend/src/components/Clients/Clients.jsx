@@ -7,7 +7,7 @@ function Clients() {
             <div className="partners">
                 <div>
                     <span>our partnerships</span>
-                    <BsArrowRight style={{ fontSize: '2rem' }} />
+                    <BsArrowRight style={{ fontSize: 'clamp(1rem, 3vw, 2rem)' }} />
                 </div>
                 <span className="span">We've earned our reputation for reliability and professionalism, leading to successful partnerships with several well-known paper mills.</span>
             </div>

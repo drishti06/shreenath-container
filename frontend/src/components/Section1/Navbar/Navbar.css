@@ -9,8 +9,6 @@ nav{
     opacity: 0.95;
     border-bottom: 1px solid #D4D4D4;
 }
-
-
 nav.hide {
   top: -100px;
   transition: top 0.5s;
@@ -20,8 +18,6 @@ nav.show {
   top: 0;
   transition: top 0.5s;
 }
-
-
 
 nav > :nth-child(1){
     display: flex;
@@ -67,7 +63,7 @@ nav > :nth-child(2){
     background-color: #B10000;
     display: inline-flex;
     gap: 0.8rem;
-    padding: 1rem 1.2rem;
+    padding: clamp(0.8rem, 2vw, 1rem) clamp(1rem, 2vw,1.2rem);
     align-items: center;
     border-radius: 2rem;
     cursor: pointer;

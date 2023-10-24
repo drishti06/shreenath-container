@@ -5,7 +5,7 @@
     gap: 2rem;
     background-color: #F5F8F6;
     z-index: -2;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .commitments-top{
@@ -13,24 +13,27 @@
     width: 90%;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 }
 
 .commitments-top > :nth-child(1){
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 2vw, 2.3rem);
 }
 
 .commitments-top > :nth-child(2){
-    font-size: 4rem;
+    font-size: clamp(2.5rem,6vw,3.5rem);
     font-weight: 600;
     padding-bottom: 1rem;
+    line-height: 3rem;
 }
 
-.commitments-top > p{
-    font-size: 1.55rem;
+.commitments-top > span{
+    font-size: clamp(0.5rem, 4vw, 1.4rem);
+    line-height:clamp(1.5rem, 10vh, 2rem);
 }
 
 .commitments-bottom{
-    width: 90%;
+    width: 75%;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -47,7 +50,7 @@
 .commitment > img{
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -63,88 +66,30 @@
 .commitment > div>  .bold{    
     color: white;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: clamp(1rem, 6vw, 1.8rem);
     z-index: 2;
 }
 
 .commitment > div> p{
     color: white;
-    font-size: 1.4rem;
+    font-size: clamp(0.7rem , 3vw, 1.2rem);
     z-index: 2;
+    line-height: 1.5rem;
 }
 
-@media(max-width:480px){
-    .commitments{
-        padding: 2rem 0;
-    }
-}
-
-@media(max-width:600px){
-    .commitments{
-        height: max-content;
-    }
-
-    .commitments-top>:nth-child(1){
-        font-size:2.3rem;
-    }
-
-    .commitments-top>:nth-child(2){
-        font-size: 2.5rem;
-    }
-
-    .commitments-top >p{
-        font-size: 1.7rem;
-        text-align: justify;
-    }
-
+@media(max-width:1200px){
+    
     .commitments-bottom{
         flex-direction: column;
-        gap: 1rem;
+        width: 100%;
+        gap:1rem ;
     }
-
-    .commitment > img, .commitment > div{
+    .commitment{
         width: 100%;
     }
-
-    .commitment > div>  .bold{
-        font-size:3rem;
-    }
-
-    .commitment > div> p{
-        font-size: 1.5rem;
-    }
-}
-
-@media(min-width:820px) and (min-height:1180px){
-    .commitments{
-        height: max-content;
-    }
     .commitment > img{
-        width: 80%;
-    }
-    .commitment > div{
-        width: 80%;
-    }
-}
-
-
-@media(width:1024px) and (height:600px){
-      .commitments-top>:nth-child(1){
-        font-size:2.3rem;
-    }
-
-    .commitments-top>:nth-child(2){
-        font-size: 2.5rem;
-    }
-      .commitments-top >p{
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-    .commitment > div>  .bold{
-        font-size:2.5rem;
-    }
-
-    .commitment > div> p{
-        font-size: 1rem;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
     }
 }

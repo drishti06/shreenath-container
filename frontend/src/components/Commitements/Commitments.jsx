@@ -9,7 +9,7 @@ function Commitments() {
             <div className="commitments-top">
                 <span>Our Commitment to</span>
                 <span>Integrity, Safety and Efficency</span>
-                <p>At Shreenath Containers Movement Pvt Ltd, we prioritize integrity, safety and customer satisfaction in everything we do. Providing efficient and reliable transportation solutions to a wide range of clients. Your cargo is our responsibility, and we take that responsibility seriously.</p>
+                <span>At Shreenath Containers Movement Pvt Ltd, we prioritize integrity, safety and customer satisfaction in everything we do. Providing efficient and reliable transportation solutions to a wide range of clients. Your cargo is our responsibility, and we take that responsibility seriously.</span>
             </div>
             <div className="commitments-bottom">
                 <div className="commitment">

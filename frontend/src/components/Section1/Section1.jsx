@@ -9,7 +9,7 @@ function Section1() {
             <div style={{ height: '7rem' }}></div>
             <div className="pink-div">
                 <h1 className="for-seo">Shreenath <br />containers <br /> movement <br /> pvt ltd</h1>
-
+                {/* <span className="try">Just trying</span> */}
                 <div className="contents">
                     <div className="cargo-img">
                         <img src={cargo} alt="" />

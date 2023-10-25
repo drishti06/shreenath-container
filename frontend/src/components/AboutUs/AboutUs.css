@@ -96,3 +96,9 @@
         right: 0;
     }
  }
+
+ @media(min-width:744px) and (max-width:9565px){
+    .about-us-left{
+        padding-right: 2rem;
+    }
+ }

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import axios from "axios";
 
 function Section3() {
-    const [mailRes, setMailRes] = useState('');
     const [isButtonVisible, setButtonVisibility] = useState(true);
     const [formData, setFormData] = useState({
         name: '',
@@ -48,15 +47,25 @@ function Section3() {
             .post('http://localhost:8080/sendEmail', formData)
             .then((response) => {
                 const data = response.data;
-                setMailRes(data);
+                alert(data)
                 setButtonVisibility(true);
-
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: '',
+                });
                 setTimeout(() => {
                     setMailRes("");
                 }, 5000);
             })
             .catch((error) => {
-                console.error('Error sending email:', error);
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: '',
+                });
                 setButtonVisibility(true);
             });
     };
@@ -72,12 +81,11 @@ function Section3() {
                     <form noValidate onSubmit={handleSubmit}>
                         <input type="text" placeholder='your name (eg. John Doe)' name="name" value={formData.name} onChange={handleChange} />
                         <input type="email" placeholder='your email (eg. xyz@example.com)' name="email" value={formData.email} onChange={handleChange} />
-                        <input type="text" placeholder='phone number (eg. +91 (1234) 567-890)' name="phone" value={formData.phone} onChange={handleChange} />
+                        <input type="number" placeholder='phone number (eg. +91 (1234) 567-890)' name="phone" value={formData.phone} onChange={handleChange} />
                         <textarea name="message" cols="30" rows="7" placeholder='your message' value={formData.message} onChange={handleChange}></textarea>
                         {isButtonVisible && (
                             <button type="submit">Send Message</button>
                         )}
-
                     </form>
                 </div>
             </div>

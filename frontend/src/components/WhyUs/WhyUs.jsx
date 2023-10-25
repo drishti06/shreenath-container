@@ -50,13 +50,8 @@ function WhyUs() {
                         <div key={index}>
                             <span className="caret">
                                 <u>{paragraph.title}</u>
-                                {visibleParagraph === index ? (
-                                    <PiCaretUpBold onClick={() => toggleContent(index)} style={{ fontSize: '20px' }} />
-                                ) : <PiCaretDownBold onClick={() => toggleContent(index)} style={{ fontSize: '20px' }} />}
                             </span>
-                            {visibleParagraph === index && (
-                                <p>{paragraph.content}</p>
-                            )}
+                            <p>{paragraph.content}</p>
                         </div>
                     ))}
                 </div>

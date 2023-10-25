@@ -28,6 +28,7 @@
 }
 
 .headings > :nth-child(2){
+
     font-size:clamp(.5rem, 5vw, 2.3rem);
     font-weight: 700;
     text-transform: lowercase;

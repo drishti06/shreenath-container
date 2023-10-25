@@ -42,8 +42,7 @@ function Navbar() {
                     className="contact-btn"
                     to="section3"
                     spy={true}
-                    smooth={true}
-                    duration={2000}
+
                     style={{ cursor: 'pointer', color: 'white', fontSize: 'clamp(0.6rem,3vw,1.2rem)' }}
                 >
                     CONTACT US

@@ -28,8 +28,8 @@
 }
 
 .commitments-top > span{
-    font-size: clamp(0.5rem, 4vw, 1.4rem);
-    line-height:clamp(1.5rem, 10vh, 2rem);
+    font-size: clamp(1rem, 2vw  , 1.6rem);
+        line-height:clamp(1.5rem, 10vh, 2rem);
 }
 
 .commitments-bottom{
